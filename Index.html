@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="PL">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabela</title>
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+    
+            body {
+                background-color: #f0f2f5;
+                padding: 20px;
+            }
+    
+    
+            h1 {
+                color: #333;
+                font-size: 28px;
+                margin-bottom: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+    
+    
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+    
+    
+            th, td {
+                padding: 15px;
+                text-align: center;
+            }
+    
+    
+            th {
+                background-color: #007bff;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+    
+    
+            td {
+                background-color: #f9f9f9;
+                color: #333;
+            }
+    
+    
+            td input[type="text"] {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            }
+    
+    
+            tr:nth-child(even) td {
+                background-color: #f1f1f1;
+            }
+    
+    
+            tr:hover td {
+                background-color: #154e86;
+            }
+    
+    
+            th[colspan] {
+                background-color: #6c757d;
+                color: #fff;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h1>Zadanie 1</h1>
+        <table>
+            <tr>
+                <th colspan="2">Dane ucznia
+                </th>
+            </tr>
+            <tr>
+                <td>Imię</td>
+                <td><input type="text" value="Bartek"></td>
+            </tr>
+            <tr>
+                <td>Nazwisko</td>
+                <td><input type="text" value="Czuryło"></td>
+            </tr>
+            <tr>
+                <td>Klasa</td>
+                <td><input type="text" value="II TP"></td>
+            </tr>
+            <tr>
+                <td>Ulubiony przedmiot</td>
+                <td><input type="text" value="Pracownia programowania"></td>
+            </tr>
+
+
+                </th>
+        </table>
+        <h1>Zadanie 2 </h1>
+        <table>
+            <th colspan="6" class="header">Plan Lekcji</th>
+             <tr>
+               <th>Dzień tygodnia</th>
+               <th>1 </th>
+               <th>2 </th>
+               <th>3 </th>
+               <th>4 </th>
+               <th>5 </th>
+             </tr>
+             <tr>
+               <td>Poniedziałek</td>
+               <td>Matematyka</td>
+               <td>J.polski</td>
+               <td rowspan="2">W.F</td>
+               <td>J.niemiecki</td>
+               <td></td>
+             </tr>
+           </tr>
+           <tr>
+             <td>Wtorek</td>
+             <td>Angielski</td>
+             <td>Angielski</td>
+             <td>Geografia</td>
+             <td>Plastyka</td>
+           
+           </tr>
+       </tr>
+       <tr>
+         <td>Środa</td>
+         <td colspan="2">Chemia</td>
+         <td>J.polski</td>
+         <td>Fizyka</td>
+         <td>Informatyka</td>
+         
+       </tr>
+   </tr>
+   
+           </table>
+           <h1>Zadanie 3</h1>
+           <table>
+            <tr>
+              <th colspan="2" class="header">Ankieta Szkolna</th>
+            </tr>
+            <tr>
+              <td>Który przedmiot lubisz najbardziej?</td>
+              <td colspan="2">Matematyka</td>
+            </tr>
+            <tr>
+              <td>Który przedmiot jest najtrudniejszy?</td>
+              <td colspan="2">Fizyka</td>
+            </tr>
+            <tr>
+              <td>Który nauczyciel jest twojim ulubionym?</td>
+              <td colspan="2">Pan Studnicki</td>
+            </tr>
+          </table>
+          <h1>Zadanie 4</h1>
+          <table>
+            <tr>
+              <th colspan="4" class="header">Wyniki sportowe</th> 
+          </tr>
+          <tr>
+              <th>Imię</th>
+              <th>Nazwisko</th>
+              <th>Dyscyplina</th>
+              <th>Wyniki</th>
+          </tr>
+          <tr>
+              <td rowspan="2">Jan</td>
+              <td rowspan="2">Kowalski</td>
+              <td>Siadkówka</td>
+              <td>3:2</td>
+          </tr>
+          <tr>
+              <td>Koszkówka</td>
+              <td>45:30</td>
+          </tr>
+          <tr>
+              <td>Anna</td>
+              <td>Lalik</td>
+              <td>Bieg na 100m</td>
+              <td>14.3s</td>
+          </tr>
+      </table>
+      <h1>Zadanie 5</h1>
+      <table>
+        <tr>
+            <th colspan="3">Harmonogram Wydarzeń</th>
+        </tr>
+        <tr>
+            <th>Data</th>
+            <th>Wydażenie</th>
+            <th>Miejsce</th>
+        </tr>
+        <tr>
+            <td>15.09.2025</td>
+            <td>Rozpoczęcie roku</td>
+            <td>Aula</td>
+        </tr>
+        <tr>
+            <td rowspan="2">20-21.10.2025</td>
+            <td>Dni Sportu</td>
+            <td>Boisko Szkolne</td>
+        </tr>
+        <tr>
+            <td>Turniej Piłki Nożnej</td>
+            <td>Stadion</td>
+        </tr>
+
+      </table>
+    </body>
+</html>
